@@ -888,12 +888,8 @@ input:checked + .advancedSlider {
     background: rgb(79 50 0 / 40%);
     border-color: #00BCD4;
 }
-#itemSearchH{
-    width: 100%;
-    padding-top: 19px;
-    z-index: 999999999;
-    background-color: #00ffff5c;
-}
+#itemSearchH {
+    background-color: #ffffff00 !important;
 .setBodH{
 	background-color: #00ffff5c;
 }
@@ -1245,3 +1241,4 @@ div:nth-child(1)>.compTScrB {
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------------- */
+
