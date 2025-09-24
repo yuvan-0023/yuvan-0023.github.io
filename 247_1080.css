@@ -898,6 +898,15 @@ input:checked + .advancedSlider {
 .serverHeader{
 	  background-color : #00ffff5c;
 }
+.moreKrunkerHolder.svelte-19783yx{
+	background-color : #00ffff5c;
+}
+.moreKrunkerOption.svelte-19783yx{
+	background-color : cyan !important;
+}
+.moreKrunkerOptionTitle.svelte-19783yx,.moreKrunkerOptionDescription.svelte-19783yx{
+	color : black !important;
+}	
 
 /* ------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1233,3 +1242,4 @@ div:nth-child(1)>.compTScrB {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------- */
+
