@@ -727,7 +727,7 @@ input:checked+.sliderSml {
 #instructionsFadeBG::after {
     content: url("https://i.postimg.cc/vmP54KtK/247-glitch-intro.gif");
     position: fixed;
-    bottom: -2%; left: 33%;
+    bottom: -10%; left: 33%;
     transform-origin: bottom;
     transform: scale(3.5);
 	filter: brightness(.6);
@@ -1242,5 +1242,6 @@ div:nth-child(1)>.compTScrB {
 #roundsDisplay {
     display: none !important;
 }
+
 
 /* ------------------------------------------------------------------------------------------------------------------------------------- */
