@@ -1,0 +1,1246 @@
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Removal */
+#aHolder,
+#instructions,
+.leaderCounter,
+#mapInfoHld,
+#topRightAdHolder,
+.endAHolder,
+#merchImg,
+#onetrust-consent-sdk,
+#braveWarning,
+#newsHolder,
+#streamContainer,
+#newUserGuide,
+#ammoMax,
+#krDiscountAd,
+#updateAd,
+#editorBtnM,
+.verticalSeparator,
+.terms.standout,
+.verticalSeparatorInline,
+.terms,
+.menuWindowSideL,
+.windowHeader,
+.menuSocialB,
+#bubbleContainer,
+#termsInfo,
+#menuBtnProfile,
+#menuBtnShop,
+#menuBtnChall,
+#menuBtnSocial,
+#policeButton,
+#menuBtnMaps,
+#menuBtnMods,
+#menuBtnSettings,
+#freeKRAd,
+#rankedBlog,
+#doubleXPAd,
+#seasonLabel,
+#menuClassNameTag,
+#doubleClassXPAd,
+#mainLogoFace,
+.menuItem[onclick$="showWindow(49)"],
+#tlInfHold,
+.newsItem,
+#bottomLeftChallIcon,
+#timerIcon,
+#recTimer,
+.weapKey,
+.weapSkin,
+#ammoIcon,
+.weapStreak,
+.weapStreakHolder,
+#bottomLeftTeamType,
+#bottomLeftTeamName,
+#menuClassIcn,
+#myScoreVal,
+#kdVal,
+#scoreCount .material-icons,
+#livesCount .material-icons {
+   	display: none !important;
+}
+/* Removal V2 */
+.button,
+#mLevelCont,
+#bottomLeftPlayer,
+#bottomLeftPlayerLeft,
+#bottomLeftPlayerRight,
+#bottomLeftTeamType,
+#bottomLeftTeamName,
+.greyInner,
+.greyInlineInner,
+.greyInlineInnerMid,
+ #mLevelCont,
+.headerBarLeft,
+.headerBarRight,
+.weapItemInner,
+.weapItem,
+#leaderContainer,
+#bottomLeftHealtBar {
+	background-color: transparent;
+}
+
+/* Useless General Gray Shit */
+.greyInner, .greyInlineInner {
+    background-color: transparent !important;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* INGAME IMAGE*/
+#bottomLeftHolder::before {
+    content:  url("https://raw.githubusercontent.com/Gamesggs/clanres/refs/heads/main/Logo_2.png");
+    width: 320px;
+    height: 320px;
+    transform : scale(0.4);
+    position: fixed;
+    padding: 0;
+    border-radius: 0px;
+    bottom: 0%;
+    left : -3%;
+}
+  #bottomLeftPlayer {
+    background-color: transparent;
+  }
+  #bottomLeftPlayerRight {
+    background-color: transparent;
+  }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Glitching Logo Reveal Animation */
+@keyframes LogoRevealGlitchBuzz {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+    filter: none;
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-5%) scale(1.2) rotate(1deg);
+    filter: drop-shadow(2px 0 magenta) drop-shadow(-2px 0 cyan);
+  }
+  20% {
+    transform: translateY(5%) scale(1.3) rotate(-1deg);
+    filter: drop-shadow(-2px 0 magenta) drop-shadow(2px 0 cyan);
+  }
+  30% {
+    transform: translateY(-3%) scale(1.5) rotate(0.5deg);
+    filter: drop-shadow(2px 0 magenta) drop-shadow(-2px 0 cyan);
+  }
+  40% {
+    transform: translateY(3%) scale(1.4) rotate(-0.5deg);
+    filter: drop-shadow(-2px 0 magenta) drop-shadow(2px 0 cyan);
+  }
+  50% {
+    transform: translateY(-2%) scale(1.5);
+    filter: drop-shadow(2px 0 magenta) drop-shadow(-2px 0 cyan);
+  }
+  60% {
+    transform: translateY(2%) scale(1.5);
+    filter: drop-shadow(-2px 0 magenta) drop-shadow(2px 0 cyan);
+  }
+  70% {
+    transform: translateY(-1%) scale(1.5);
+    filter: drop-shadow(2px 0 magenta) drop-shadow(-2px 0 cyan);
+  }
+  80% {
+    transform: translateY(1%) scale(1.5);
+    filter: drop-shadow(-2px 0 magenta) drop-shadow(2px 0 cyan);
+  }
+  90% {
+    transform: translateY(0) scale(1.5);
+    filter: drop-shadow(1px 0 magenta) drop-shadow(-1px 0 cyan);
+  }
+  100% {
+    transform: translateY(0) scale(1.5);
+    filter: none;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*  Logo Styling */
+#mainLogo {
+  content: url("https://raw.githubusercontent.com/Gamesggs/clanres/refs/heads/main/Logo_2.png");
+  height: 150%;
+  width: 45%;
+  margin-top : 80  % !important;
+  animation: LogoRevealGlitchBuzz  1.8s ease-out forwards;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Buttons */
+.buttonP, .buttonR, .buttonPI,  .buttonGhover , .button {
+  color : whitesmoke;
+  border: 5px solid #00FFFF !important;
+}
+.buttonP:hover, .buttonR:hover, .buttonPI:hover,  .buttonGhover:hover , #customizeButton {
+  color : whitesmoke;	
+  border: 5px solid #00FFFF;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Menu */
+#menuItemContainer {
+  position: absolute;
+  background-color: #00ffff00; /* transparent */
+  width: 40rem;
+  padding : 10px;
+  height : 130vh;
+  gap: 0px;
+  top: -5%;  
+}
+
+#menuItemContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+  135deg,
+  cyan 0%,
+  #00ffffe0 25%,
+  #00ffffb3 50%,
+  #00fdfd8c 75%,
+  #b0ffff9e 100%);
+  border: 10px solid black;
+  transform: skewX(-10deg)translateX(-120px);
+  z-index: -1;
+  box-shadow: 5px 5px 0px black;
+}
+.menuItem .menuItemTitle,.menuDebugInfo {
+  display: none
+}
+.material-icons-outlined, span.material-symbols-outlined {
+    color: #000000 !important
+}
+#streamContainer, #streamContainerNew { 
+display: none !important; 
+}
+#signupRewardsButton,#menuRegionLabel {
+    display: none !important;
+}
+div#gameAnnouncementEl {
+    display: none !important;
+}
+
+.menuItem:nth-child(4){
+	display : none !important;
+}
+.menuItem:nth-child(5){
+	display : none !important;
+}
+.menuItem:nth-child(1){
+	margin-left : 45%;
+	transform : scale(1.5);
+	width : 1rem;
+}
+.menuItem:nth-child(2){
+	margin-left : 40%;
+	transform : scale(1.5);
+	width : 1rem;
+}
+.menuItem:nth-child(3){
+	content : "public";
+	margin-left : 40%;
+	transform : scale(1.5);
+	width : 1rem;
+}
+.menuItem:nth-child(6){
+	margin-left : 35%;
+	transform : scale(1.5);
+	width : 1rem;
+}
+.menuItem:nth-child(7){
+	margin-left : 30%;
+	transform : scale(1.5);
+	width : 1rem;
+}
+.menuItem:nth-child(8){
+	margin-left : 25%;
+	transform : scale(1.5);
+	width : 1rem;
+}
+#subLogoButtons {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 92%;
+  transform: translateY(-1400px);
+  pointer-events: all;
+}
+#subLogoButtons:hover {
+  transform: translateY(-910px); /* smoothly drops */
+}
+#subLogoButtons:after {
+  content: "";
+  display: block;
+  width: 225px;             /* Match your button width */
+  height: 5px;              /* Bar thickness */
+  background-color: cyan;   /* Neon-style */
+  margin-top: 20px;         /* Space from last button */
+  border-radius: 8px;
+  box-shadow: 0 0 6px cyan; /* Glow effect */
+  transition: all 0.3s ease-in-out;
+  pointer-events: all;
+}
+#menuBtnRanked{
+	height: 40px;
+    line-height: 45px;
+    padding-top: 5px !important;
+    padding-bottom: 13px !important;
+    padding-left: 97px !important;
+    padding-right: 22px !important;
+    font-size: 20.5px !important;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#menuBtnHost{
+	height: 40px;
+    line-height: 45px;
+    padding-top: 5px !important;
+    padding-bottom: 13px !important;
+    padding-left: 46px !important;
+    padding-right: 22px !important;
+    font-size: 20.5px !important;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#menuBtnBrowser{
+	height: 40px;
+    line-height: 45px;
+    padding-top: 5px !important;
+    padding-bottom: 13px !important;
+    padding-left: 55px !important;
+    padding-right: 22px !important;
+    font-size: 20.5px !important;
+    margin-left: 3px;
+    margin-right: 3px;
+	text-align : center !important;
+}
+#inviteButton{
+	height: 40px;
+    line-height: 45px;
+    padding-top: 5px !important;
+    padding-bottom: 13px !important;
+    padding-left: 115px !important;
+    padding-right: 22px !important;
+    font-size: 20.5px !important;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#menuBtnJoin{
+	height: 40px;
+    line-height: 45px;
+    padding-top: 5px !important;
+    padding-bottom: 13px !important;
+    padding-left: 130px !important;
+    padding-right: 22px !important;
+    font-size: 20.5px !important;
+    margin-left: 3px;
+    margin-right: 3px;
+	
+}
+.moreKrunkerClient.svelte-19783yx{
+	content : url("https://i.postimg.cc/vmP54KtK/247-glitch-intro.gif")
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Health */
+#bottomLeftHealthBar {
+    width: 333px;
+    height: 73px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 3;
+    position: fixed;
+    left: 6%;
+    bottom: 7%;
+    outline: 9px solid var(--hp-ammo);
+    filter: drop-shadow(7px 7px 3px rgba(30, 30, 30, .5));
+    visibility: visible !important;
+}
+.nHealthBarSeg {
+    width: -webkit-fill-available;
+    height: 60px;
+    margin: 0 -5px;
+    border-radius: 0;
+    background-color: transparent;
+}
+.nHpBSeg {
+    border-radius: 0;
+    box-shadow: none;
+}  
+#bottomLeftHealth {
+    color: #fff;
+    font-size: 125px;
+    will-change: transform;
+    display: none !important;
+    text-shadow: 7px 7px 3px rgba(30, 30, 30, .5);
+    letter-spacing: 2px;
+    visibility: visible !important;
+    background-color: transparent;
+    position: fixed;
+    left: calc(40%);
+    bottom: 5px;
+}
+/* Ammo */
+#ammoHolder {
+	position: fixed;
+	background-color: transparent;
+	background-image:linear-gradient(to right,#6898b0,white);
+	transform: unset;
+	width: 35px;
+	height: 4px;
+	size: 20px;
+	bottom : 47%;
+	left: 49%;
+}
+#ammoVal {
+	text-shadow: 7px 7px 3px rgba(30, 30, 30, .5);
+	position: fixed;
+	font-size: 80px;
+	right: 5%;
+	bottom: 3%;
+	color: #ffffff;
+	letter-spacing: 2px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* LB*/
+#leaderboardHolder{
+    background-color : #00ffff30;
+    border-radius : 15px;
+	display: none !important;
+}
+#killFeed {
+	position: fixed;
+	bottom: -250px !important;
+	left:-2070px !important;
+	background-color: rgba(0, 0, 0, 0);
+	color:transparent !important;
+	filter: none !important;
+}
+#ingameTable th {
+  display: none;
+  height: 0px !important;
+}
+.newLeaderTeam {
+    display: none;
+}
+#centerLeaderDisplay {
+    top: 10px;
+    left:unset;
+    right: 10px;
+    transform: unset;
+    display:block !important;
+    width: auto;
+}
+#ingameTable td, .newLeaderCounter {
+    color: white !important;
+}
+#ingameTable td {
+  text-align: right;
+}
+.newLeaderItem {
+  text-align: left;
+}
+.centerLeaderContainer {
+    text-align: left;
+    color: #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    width: auto;
+}
+.centerLeaderContainerInner {
+    background-color: transparent !important;
+}
+#ingameTable {
+  background-color: rgb(255 255 255 / 0%) !important;
+  border-radius: 0px;
+  border-spacing: 0px;
+  padding-bottom: 4px;
+}
+.newLeaderCounter{
+	display : none;
+}
+#newLeaderDisplay {
+    top: 50px;
+    left:unset;
+    right: 20px;
+    transform: unset;
+    display:block !important;
+}
+.newLeaderContainer,.newLeaderTeam {
+    background-color:transparent !important;
+}
+td>.newLeaderItem {
+    max-width: 300px;
+    min-width: 250px
+}
+#leaderContainer {
+  display: none;
+}
+.topRightCounters {
+    display: none !important;
+}
+.newLeaderNameM span{
+  font-size: 18px !important;
+  visibility: visible;
+  background-image: linear-gradient(to right, #00ffff
+, #ffffff,#00ffff
+);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 2000s linear infinite;  
+    }
+    @keyframes rainbow-animation {
+        to {
+            background-position: 4500vh;
+    }
+}
+.newLeaderNameM:before {
+    visibility    : visible !important;
+    display       : inline-block;
+    content       : url("https://github.com/Gamesggs/clanres/blob/main/Logo_2.png?raw=true") !important;
+    vertical-align: middle;
+    transform     : scale(0.04);
+    margin-top    : -50px;
+    margin-bottom : -20px;
+    margin-right  : 21px;
+    margin-left   : -4px;
+    width         : 24px;
+    height        : 24px;
+}
+.leaderNameM span {
+  visibility: hidden;
+  font-size: 0 !important;
+}
+.leaderNameM::after {
+  content: " [24/7]";
+  font-size: 18px !important;
+  visibility: visible;
+  background-image: linear-gradient(to right, #00FFFF
+, #0f7979,#00FFFF
+);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 1500s linear infinite;  
+    }
+    @keyframes rainbow-animation {
+        to {
+            background-position: 4500vh;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Spec Button */
+#uiBase.onMenu #spectButton {
+	transition: all 0.5s;
+	position: fixed;
+	top: 55%;
+	left: calc(50% - 25px);
+}
+#uiBase.onMenu #spectButton::before {
+	color: white;
+	position: fixed;
+	font-size: 30px;
+	margin-left: 20px;
+	bottom: 70px;
+}
+#spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+	display: none;
+	color: #ffffff00 !important;
+}
+#spectButton .switchsml {
+	margin: 0;
+	position: fixed;
+	width: 100%;
+}
+#spectButton > span {
+	font-size: 0 !important;
+}
+.sliderSml::before {
+	content: "";
+	font-size: 0px;
+	color: #fff;
+	width: max-content;
+	height: auto;
+	background-color: transparent;
+	text-align: center;
+	opacity: 1;
+	padding : 10px;
+}
+.sliderSml::before {
+	padding-top: 300px !important;
+	border-bottom: none !important;
+	background-color: transparent;
+	content: "visibility_off";
+	font-size: 40px;
+	color: white;
+	border-top: none;
+	width: max-content;
+	text-align: center;
+	border-radius: 0;
+	font-family: 'Material Icons';
+}
+input:checked+.sliderSml::before {
+	content: "visibility";
+	transform: unset;
+}
+input:checked+.sliderSml {
+	background-color: transparent !important;
+}
+.sliderSml {
+	background-color: transparent;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* UI Scale */
+#uiBase {
+    height: calc(100%/0.8) !important;
+    width: calc(100%/0.8) !important;
+    transform: scale(0.8) !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* MESSAGE */
+#matchInfo.topLeftOld {
+    font-size: 0px!important;
+    margin-bottom : 90%;
+}
+#matchInfo.topLeftOld:after {
+    content: "All The Way";
+    color:cyan;
+    font-size: 25px;
+    text-shadow : 0px 0px 20px #3F51B5;
+}
+#matchInfo.topLeftOld {
+    margin-top: 60% !important;
+    margin-left : -2%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*Code By Alric*/
+#bottomLeftClassImg{
+    display : none !important;
+}
+#menuAccountUsername {
+    border: 2px solid #74c8ac00;
+    animation: none;
+}
+#mainLogo {
+    margin-top: 30%;
+}
+#menuBtnRanked {
+    border: 5px solid #00FFFF !important;
+}
+#matchInfoHolder {
+    border-bottom: 5px solid #00FFFF;
+}
+#menuKRCount {
+    margin-right: 10px;
+}
+#menuJNKCount {
+    margin-right: 10px;
+}
+#mailIcon {
+    margin-right: 10px;
+}
+#mLevelCont {
+    padding-left: 0px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*TIMER*/
+#timerIcon.topLeftOld {
+    display: none;
+}
+#timerInner.topLeftOld {
+    background: transparent;
+}
+#timerVal.topLeftOld {
+    background-color : transparent;
+    font-size : 50px !important;
+    border-radius : 10px;
+}
+#timerHolder {
+    position        : fixed;
+    left            : 3.2%;
+    transform       : translateX(-50%);
+    background-color: transparent !important;
+    margin          : 0px !important;
+    padding         : 0px !important;
+    top             : -0.5%;
+    opacity : 0.5;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* KDS */
+.statIcon {
+    font-size: 17px;
+    border-radius: 10px;
+    background-color : #00ffff30;
+    transform : scale(0.9);
+	display: none !important;
+
+    
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Loading Screen */
+#instructionsFadeBG {
+	z-index: 99 !important;
+    background: transparent;
+}
+#instructionsFadeBG::before {
+    content: var(--msg);
+    font-size: 100px;
+    color: #6898b0;
+	text-shadow: 3px 3px whitesmoke;
+    position: fixed;
+    top: 10%; left: 90%;
+    transform: translate(-50%, -50%);
+	z-index: 999;
+}
+#instructionsFadeBG::after {
+    content: url("https://i.postimg.cc/vmP54KtK/247-glitch-intro.gif");
+    position: fixed;
+    bottom: -2%; left: 33%;
+    transform-origin: bottom;
+    transform: scale(3.5);
+	filter: brightness(.6);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* CUSTOMIZE BUTTON */
+#classPreviewCanvas{
+    margin-bottom : -15%;
+	filter: drop-shadow(0 0 2px whitesmoke)
+          drop-shadow(0 0 10px cyan)
+          drop-shadow(0 0 5px whitesmoke);
+}
+#menuClassName,#menuClassSubtext{
+	display : none !important;
+} 
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* MENU ITEMS */
+#menuKRCount,#menuJNKCount,#mailIcon,#walletContainer,#menuMiniProfilePic{
+  display : none !important;
+}
+#menuAccountUsername{
+  position: fixed;
+	margin-left : 12.5%;
+	margin-top : 9% !important;
+	font-size : 80px;
+	background-image: linear-gradient(to right, cyan, #fdfdfdbf 65%, #ffffff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transform : rotate(-80deg);
+	z-index : 150p;
+	filter: drop-shadow(0 0 2px #000000)
+          drop-shadow(0 0 10px #000000)
+          drop-shadow(0 0 5px #000000);
+}
+#menuAccountUsername:hover{
+	transform : rotate(-80deg);
+	z-index : 150p;
+}
+
+#menuLvlHold.progressBar{
+  margin-top : -25%;
+  margin-left : 15%;
+  border : 3px solid #c9a0dc;
+  border-radius : 5px;
+  display: none !important ;
+}
+#mLevelContV{
+  color : #c9a0dc;
+  text-shadow : 2px 1px whitesmoke;
+	display: none !important ;
+}   
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* MENU CHAT*/
+#uiBase.onMenu #chatHolder,#chatList{
+	left : 17% !important;
+    bottom : 0% !important;
+    background-color : #00000000;
+}
+#uiBase.onMenu #chatInputHolder{
+    background-color : #00000000;
+}
+#uiBase.onMenu #chatInput{
+    background-color : #00000000;
+}
+#uiBase.onMenu #chatHolder,#chatList{
+    bottom : 5% !important;
+    background-color : #00000000;
+}
+#uiBase.onMenu #chatInputHolder{
+    background-color : #00000000;
+}
+#uiBase.onMenu #chatInput{
+    background-color : #00000000;
+}
+#uiBase.onMenu #chatSwitch{
+    color : cyan;
+}
+.voiceOff:after {
+  display: none !important;
+}
+#recTimer {
+  display: none !important;
+}
+#uiBase.onGame #chatSwitch{
+    color : cyan;
+}
+.chatMsg {
+    color: #ffffff !important;
+}
+.chatItem{
+    color : cyan !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* INGAME CHAT*/
+#uiBase.onGame #chatHolder,#chatList{
+    bottom : 18% !important;
+    background-color : #00000000;
+}
+#uiBase.onGame #chatInputHolder{
+    background-color : #00000000;
+}
+#uiBase.onGame #chatInput{
+    background-color : #00000000;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Settings Page */
+.setSugBox2{
+    display: none;
+}
+#menuWindow.dark,
+.settingsHeader,
+.settingsBtn{
+    background-color: #00ffff5c;
+} 
+input[type=color],
+.setHed {
+    border: 4px solid rgb(255 255 255);
+    background-color: #f8f8ff33;
+}
+input:checked+.slider {
+    background-color: #00BCD4;
+	box-shadow: 0px 0px 30px 1px #ffffff;
+    border: 3px solid whitesmoke
+}
+.slider:before {
+	width: 0px;
+}
+.switch {
+	width: 100px;
+	height: 34px;
+}
+.slider {
+	border-radius: 10px; 
+}
+.settingsBtn{
+    border: 3px solid whitesmoke;
+}
+input:checked + .advancedSlider {
+    background-color: #00BCD4;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 0px 30px 1px #ffffff;
+}
+#menuWindow.dark div {
+    color: #ffffff;
+}
+.chalCardH,.chalCard {
+    box-shadow: 0 0 50px #00e2ff;
+    background: rgb(79 50 0 / 40%);
+    border-color: #00BCD4;
+}
+#itemSearchH{
+    width: 100%;
+    padding-top: 19px;
+    z-index: 999999999;
+    background-color: #00ffff5c;
+}
+.setBodH{
+	background-color: #00ffff5c;
+}
+.serverHeader{
+	  background-color : #00ffff5c;
+}
+.moreKrunkerHolder.svelte-19783yx{
+	background-color : #00ffff5c;
+}
+.moreKrunkerOption.svelte-19783yx{
+	background-color : cyan !important;
+}
+.moreKrunkerOptionTitle.svelte-19783yx,.moreKrunkerOptionDescription.svelte-19783yx{
+	color : black !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Class Selector */
+.classHP,.className,.classWeap,.clsXPBarV,.clsXPBarC,.classXPBar,.settLabel{
+  display : none !important;
+}
+.classImgC{
+	margin-left : 70px;
+	width:100px;
+	height : 100px;
+	box-shadow : 1 1 5px black;
+}
+.classCard {
+  text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020, -3px -3px 0 #202020, 3px -3px 0 #202020, -3px 3px 0 #202020, 3px 3px 0 #202020;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 12px;
+  margin-left: 6px;
+  margin-right: 7px;
+  padding: 10px;
+  width: 246px;
+  height: 95px;
+  vertical-align: top;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 24px;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem #000000;
+  background-color: cyan;
+  justify-content : center;
+  background-color : cyan;
+}
+.clsXPBarV{
+  background-image: linear-gradient(to right, cyan, #00BCD4, 94%, white);
+}
+.custContainer {
+  background-color : #00ffff82;
+}
+.custContainer:hover {
+  background-color : #00ffffbf;
+}
+.skinCard{
+  text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020, -3px -3px 0 #202020, 3px -3px 0 #202020, -3px 3px 0 #202020, 3px 3px 0 #202020;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 12px;
+  margin-left: 6px;
+  margin-right: 7px;
+  padding: 10px;
+  width: 170px;
+  height: 170px;
+  vertical-align: top;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 24px;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem #000000;
+  background-color: cyan;
+  justify-content : center;
+  background-color : cyan;
+}
+.lockedSkin{
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-radius: 4px;
+  background-color: cyan;
+  padding: 70px;
+  padding-top: 71px;
+  z-index: 2;
+}
+.selectorItem {
+	background-color: #00ffff69;
+}
+.selectorItem:hover {
+	background-color: #00fffffc;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* WEAPON ICON */
+#weapHolder{
+	left : 5%;
+	bottom : 2%;
+	display : flex !important;
+	flex-direction : row !important;
+}
+.weapItem {
+    -webkit-text-stroke: 5px cyan;
+    margin-right: 0px;
+	margin-bottom: 0px;
+    filter: drop-shadow(0 0 6px cyan)
+            drop-shadow(0 0 10px #00ffffa1)
+            drop-shadow(0 0 0px #00ffff69);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* DEATH UI */
+.death-ui-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 300px;
+    display: grid;
+    background-color: transparent !important;
+    grid-template-columns: calc(25% - 50px) calc(25% - 50px) 60px calc(25% - 50px) calc(25% - 50px);
+    column-gap: 20px;
+    align-content: space-evenly;
+    backdrop-filter: blur(10px);
+    animation: death-ui-moveup 1.5s ease;
+}
+.death-row-bottom {
+    display: grid;
+    height: 114px;
+    background-image: linear-gradient(to right, cyan, #b2f6ff 65%, #ffffff);
+    width: 400px;
+    border : none !important;
+    border-radius: 2px;
+    justify-content: start;
+    grid-template-columns: 120px auto !important;
+}
+.death-stats {
+    color: #ffffff;
+    align-items: center;
+    border-radius: 6px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    height: 120px;
+    justify-content: start;
+    row-gap: 17px;
+    text-align: left;
+    display : none;
+}
+.death-row-weapon,.death-row-kills,death-row-center,death-row-center death-row-center-bottom.death-row-center, .death-row-center-bottom, .death-row-center-self,.death-row-center, .death-row-center-bottom, .death-row-center-self{
+    display: grid;
+    grid-template-rows: auto auto;
+    height: 114px;
+    justify-content: center;
+    display : none;
+}
+.death-row-user {
+    align-items: center;
+    font-size: 40px;
+    margin-left : -40px;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+    text-align: start;
+}
+.death-column{
+    margin-top : -30%;
+}
+.death-row-class{
+    content : url("https://github.com/Gamesggs/clanres/blob/main/Logo_2.png?raw=true");
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* COMP MENU */
+#cmpLeavInfo {
+    display: none
+}
+#compInfBox {
+    top   : unset;
+    bottom: 10px
+}
+.compMenBtnS {
+    background-color: rgb(25 25 25) !important;
+    border          : 4px solid rgba(255 255 255 / .1);
+    transition      : all .1s ease-in-out
+}
+.compMenBtnS:hover,
+#cmpSpectBtn[style*="rgb(142, 199, 44)"]:hover {
+    border-color: rgba(255 255 255 / .75)
+}
+#cmpSpectBtn[style*="rgb(142, 199, 44)"] {
+    background-color: rgb(142, 199, 44) !important;
+    border          : 4px solid rgba(0 0 0 / .3)
+}
+#cmpSpectBtn[style*="rgb(142, 199, 44)"] .material-icons {
+    color: #1c1c1c !important
+}
+.compMenBtnS .material-icons {
+    margin-bottom: 17.5px !important
+}
+#compClassPHolder {
+    background-color: transparent
+}
+#compTScrsB {
+    top      : 50%;
+    left     : 50%;
+    width    : 1200px;
+    height   : 500px;
+    transform: scale(1) translate(-50%, -50%)
+}
+#compTScrsB div:nth-child(2) {
+    display: none !important;
+}
+.compSwpTmB {
+    margin-top      : 25px;
+    background-color: rgb(25 25 25) !important;
+    border          : 4px solid rgba(255 255 255 / .1);
+    transition      : all .1s cubic-bezier(0.4, 0, 0.2, 1)
+}
+.compSwpTmB[style="background-color:#eb4034"] {
+    border: 4px solid #eb4034 !important
+}
+.compSwpTmB[style="background-color:#3489eb"] {
+    border: 4px solid #3489eb !important
+}
+.compSwpTmB[style="background-color:#eb4034"]:hover {
+    background: #eb4034 !important;
+    border    : 4px solid white !important
+}
+.compSwpTmB[style="background-color:#3489eb"]:hover {
+    background: #3489eb !important;
+    border    : 4px solid white !important
+}
+.compPLstIcn {
+    border-radius: 4px;
+    border       : 4px solid rgba(255 255 255 / .1) !important;
+}
+.compPlWepsL {
+    margin-left: -300px;
+}
+.compPlWepsR {
+    margin-right: -300px
+}
+.compPlWpIcn {
+    border-radius   : 0;
+    border          : unset;
+    background-color: unset;
+    margin-top      : 2.5px;
+    filter          : drop-shadow(0px 0px 5px #000000);
+}
+.cmpFlagIcL {
+    -webkit-mask-image: linear-gradient(to left, transparent 10%, black 100%);
+    left              : -60px;
+}
+.cmpFlagIc {
+    -webkit-mask-image: linear-gradient(to right, transparent 10%, black 100%);
+    right             : -65px;
+}
+.cmpFlagIc,
+.cmpFlagIcL {
+    transform    : scale(3.6);
+    margin-top   : 31.5px;
+    z-index      : -1;
+    border-radius: 6px
+}
+#uiBase.onCompMenu #specOverlay {
+    background-color: black
+}
+#compBtnLst {
+    bottom          : 0px;
+    padding-bottom  : 30px;
+    padding-top     : 10px;
+    background-color: transparent;
+    pointer-events  : all;
+    position        : absolute;
+    width           : 100%;
+    text-align      : center;
+}
+#uiBase.onCompMenu.onMenu {
+    background-color       : #000000;
+    opacity                : 0.85;
+    pointer-events         : none;
+    width                  : 100%;
+    height                 : 100%;
+    text-align             : center;
+    z-index                : 1;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter        : blur(10px);
+}
+.cmpClassLck span {
+    font-size: 0 !important;
+}
+.cmpClassLck span:after {
+    font-family: Material Icons;
+    content    : 'check';
+    font-size  : 80px;
+    color      : #00ffff;
+    font-weight: bolder;
+}
+div:nth-child(1)>.compTScrB {
+    content            : "";
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    background-position: center;
+    height             : 900px;
+    width              : 700px;
+    padding-right      : 900px;
+    top                : -100px;
+    position           : relative;
+    z-index            : 10;
+    color              : transparent !important;
+    font-size          : 0 !important;
+    overflow           : hidden !important;
+}
+#cmpDatBox {
+    border-left: 0px;
+    font-size  : 0px;
+}
+#cmpDatSub {
+    font-size: 0px;
+}
+#cmpDatBox:after {
+    position           : fixed;
+    top                : 10%;
+    left               : 39%;
+    font-size          : 90px;
+    content            : "Let's Play";
+    color              : #000000;
+    -webkit-text-stroke: 5px #00ffff;
+
+}
+/*ROUNDS*/
+#roundsDisplay {
+    display: none !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
