@@ -752,7 +752,7 @@ input:checked+.sliderSml {
 }
 #menuAccountUsername{
   position: fixed;
-	margin-left : 10.5%;
+	margin-left : 8.5%;
 	margin-top : 9% !important;
 	font-size : 80px;
 	background-image: linear-gradient(to right, cyan, #fdfdfdbf 65%, #ffffff);
@@ -1242,5 +1242,6 @@ div:nth-child(1)>.compTScrB {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------- */
+
 
 
