@@ -718,7 +718,7 @@ input:checked+.sliderSml {
     color: #6898b0;
 	text-shadow: 3px 3px whitesmoke;
     position: fixed;
-    top: 10%; left: 90%;
+    top: 15%; left: 90%;
     transform: translate(-50%, -50%);
 	z-index: 999;
 }
@@ -752,7 +752,7 @@ input:checked+.sliderSml {
 }
 #menuAccountUsername{
   position: fixed;
-	margin-left : 8.5%;
+	margin-left : 5.5%;
 	margin-top : 9% !important;
 	font-size : 80px;
 	background-image: linear-gradient(to right, cyan, #fdfdfdbf 65%, #ffffff);
@@ -1242,6 +1242,7 @@ div:nth-child(1)>.compTScrB {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------- */
+
 
 
 
